@@ -271,13 +271,11 @@
     <a href="#" class="logo">Web Player</a>
     <div class="menu">
       <a href="#" onclick="loadM3U('https://gist.githubusercontent.com/lejuans01/2f8d72299d1c274b913cc3ef3eb747f7/raw/27baad0d14f2e88c29e8f7e4ea3faa8eafa0d3c7/Autoloadlist.m3u')">Live TV</a>
+      <a href="#" onclick="loadM3U('https://gist.githubusercontent.com/lejuans01/9dc34bad1bc110ba2986ea9cf781f1a4/raw/7415a4d6eee7cc275570727e2221ee83d4472b39/ST%2520NEW.M3U')">Live TV 2</a>
       <a href="#" onclick="loadM3U('https://tinyurl.com/multiservice21?region=us&service=Plex')">Plex</a>
       <a href="#" onclick="loadM3U('https://gist.githubusercontent.com/lejuans01/aaa0e50a5c91c676fad248a00015da32/raw/26a4b14115fc8109076ccf8092ecd9fb6fc4053f/Dash-Radio.m3u')">Dash Radio</a>
       <a href="#" onclick="loadM3U('https://gist.githubusercontent.com/lejuans01/fcf26bc3b39a867919d16e0c031ab069/raw/80b38ef77bb44a149c2fce46487d0b3a419d5720/4k%2520Movies.m3u')">4K Movies</a>
-    </di
-
-
-    v>
+    </div>
 
     <!-- Hamburger Menu -->
     <div class="hamburger-menu" onclick="toggleMenu()">
@@ -289,6 +287,7 @@
     <!-- Mobile Menu -->
     <div class="menu-mobile" id="menuMobile">
       <a href="#" onclick="loadM3U('https://gist.githubusercontent.com/lejuans01/2f8d72299d1c274b913cc3ef3eb747f7/raw/27baad0d14f2e88c29e8f7e4ea3faa8eafa0d3c7/Autoloadlist.m3u'); closeMenu();">Live TV</a>
+      <a href="#" onclick="loadM3U('https://gist.githubusercontent.com/lejuans01/9dc34bad1bc110ba2986ea9cf781f1a4/raw/7415a4d6eee7cc275570727e2221ee83d4472b39/ST%2520NEW.M3U'); closeMenu();">Live TV 2</a>
       <a href="#" onclick="loadM3U('https://tinyurl.com/multiservice21?region=us&service=Plex'); closeMenu();">Plex</a>
       <a href="#" onclick="loadM3U('https://gist.githubusercontent.com/lejuans01/aaa0e50a5c91c676fad248a00015da32/raw/26a4b14115fc8109076ccf8092ecd9fb6fc4053f/Dash-Radio.m3u'); closeMenu();">Dash Radio</a>
       <a href="#" onclick="loadM3U('https://gist.githubusercontent.com/lejuans01/fcf26bc3b39a867919d16e0c031ab069/raw/80b38ef77bb44a149c2fce46487d0b3a419d5720/4k%2520Movies.m3u'); closeMenu();">4K Movies</a>
@@ -307,7 +306,7 @@
     <!-- Video player container -->
     <div id="player">
       <!-- Video element -->
-      <video id="videoPlayer" controls autoplay>
+      <video id="videoPlayer" controls>
         <source id="source" src="" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -392,7 +391,7 @@
           allChannels = parseM3U(content);
           groupChannelsByGroupTitle(allChannels);
           renderGroupedChannels();
-          playChannel(allChannels[0].url); // Auto-play first channel
+          /* playChannel(allChannels[0].url); // Auto-play first channel */
         })
         .catch(error => {
           console.error('Error loading M3U playlist:', error);
