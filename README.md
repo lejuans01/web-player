@@ -1,1 +1,1 @@
-Web Player For Live TV 1[,](https://gist.githubusercontent.com/lejuans01/ecab63bebbd8c6e9771179f69f16c2be/raw/2e467cdebad488e3c17d9cb977bad3e08232285e/Web%2520Player%2520-%2520Live%2520Tv%25201,2%2520-%2520Plex%2520-%2520Dash%2520Radio%2520-%25204K%2520Movies.html) 2, Plex, Music and VOD[.](https://lejuans01.github.io/web-player/)
+Web Player For Live TV 1, 2, Plex, Music and VOD.
